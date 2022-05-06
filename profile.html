@@ -102,10 +102,10 @@
       document.getElementById("email").innerHTML = email;
       if (gender == "female") {
         document.getElementById("avtar").innerHTML =
-          "<img src='female.png' style='width: 250px;'/>";
+          "<img src='images/female.png' style='width: 250px;'/>";
       } else {
         document.getElementById("avtar").innerHTML =
-          "<img src='male.png' style='width: 250px;'/>";
+          "<img src='images/male.png' style='width: 250px;'/>";
       }
     </script>
 
@@ -127,6 +127,7 @@
           document.cookie = "name= ; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
           document.cookie = "email= ; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
           document.cookie = "secret= ; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+          document.cookie = "gender= ; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
           location.href = "index.html";
         }
       }

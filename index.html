@@ -21,7 +21,8 @@
   </head>
   <body>
     <div class="page-loader">
-      <div class="spinner"></div>
+      <div class="spinner">
+    </div>
       <div class="txt">Loading something Beautiful!</div>
     </div>
     <div class="d-flex justify-content-center">
@@ -109,7 +110,7 @@
         <th>
           <img
             style="width: 500px"
-            src="register.png"
+            src="images/register.png"
             class="img-fluid"
             alt="Registration"
           />
@@ -154,5 +155,11 @@
   </script>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/loader.js"></script>
+<script>
+  $(window).on('load',function(){
+	setTimeout(function(){
+	$('.page-loader').fadeOut('slow');
+	},1000);
+});
+</script>
 </html>
